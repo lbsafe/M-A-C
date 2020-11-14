@@ -1,0 +1,412 @@
+body{
+    background-color: #fff;
+}
+header > div,
+.mainArea > div,
+.lipArea > div,
+.eyesArea > div,
+.detailArea > div,
+.storyArea > div,
+.backToArea > div,
+.contactArea > div,
+.privacyArea > div,
+.termsArea > div,
+footer ul{
+    width: 90%;
+    margin: 0 auto;
+}
+.swiper-button-next{
+    background: url("../images/right_btn.svg") center center no-repeat;
+}
+.swiper-button-prev{
+    background: url("../images/left_btn.svg") center center no-repeat;
+}
+.swiper-pagination-bullet-active{
+    background-color: #111111;
+}
+.menuArea nav.menuPage ul li a,
+.mainArea > div h2,
+.mainArea > div strong,
+.lipArea h2,
+.lipArea > div ul li h3,
+.faceArea h2,
+.faceArea ul li div h3,
+.faceArea ul li div a,
+.eyesArea > div h2,
+div.box h2,
+ul.tabMenu li h3,
+.detailArea > div div.rightArea h3,
+.storyArea div h2,
+.storyArea div h3,
+.backToArea div h2,
+.backToArea div h3,
+.contactArea > div h2,
+.privacyArea div h2,
+.privacyArea div h3,
+.termsArea div h2,
+.termsArea div h3{
+    font-family: 'Vogue';
+    font-weight: 100;
+}
+header > div input[id="menuButton"]+label span,
+footer ul li h4,
+footer ul li a,
+footer p,
+.lipArea > div ul li figure figcaption dl,
+.faceArea ul li div p,
+.eyesArea > div div:first-of-type a span,
+.eyesArea > div div:last-of-type ul li a span,
+div.tabPage figure figcaption dl,
+.detailArea > div div.rightArea p,
+.detailArea > div div.rightArea form select,
+.detailArea > div div.rightArea form input,
+.detailArea > div > a,
+.storyArea div p,
+.backToArea div p,
+.contactArea > div div dl,
+.privacyArea div p,
+.privacyArea div ul li,
+.termsArea div p{
+    font-family: 'NanumGothicRegular';
+}
+
+/* subglobal Fin */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    padding-bottom: 10px;
+}
+.headerChange{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 10px 1px rgba(255,255,255,0.4);
+}
+header > div{
+    box-sizing: border-box;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+header > div:after{
+    display: block; visibility: hidden; clear: both; content: '';
+}
+header > div h1 a{
+    text-indent: -9999px;
+    float: left;
+    background: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+header > div h1 a.active{
+    background: url("../images/logo_white.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header > div input[id="menuButton"]{
+    display: none;
+}
+header > div input[id="menuButton"]+label{
+    box-sizing: border-box;
+    float: right;
+    cursor: pointer;
+    border: 1px solid #111111;
+    border-radius: 50%;
+    color: #111111;
+}
+header > div input[id="menuButton"]+label.active{
+    border: 1px solid #fff;
+    color: #fff;
+}
+header > div input[id="menuButton"]+label.active span{
+    color: #fff;
+}
+header > div input[id="menuButton"]+label span{
+    font-weight: 100;
+    float: left;
+    margin-top: 38%;
+    color: #111111;
+}
+header > div input[id="menuButton"]+label,
+header > div input[id="menuButton"]+label span:first-of-type,
+header > div input[id="menuButton"]+label span:nth-of-type(2),
+header > div input[id="menuButton"]+label span:nth-of-type(3),
+header > div input[id="menuButton"]+label span:last-of-type{
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+/* header Fin */
+
+footer{
+    background: url('../images/footer_bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding-bottom: 4.0104vw;
+}
+footer ul{
+    box-sizing: border-box;
+    padding-top: 7.2396vw;
+    border-bottom: 1px solid #111111;
+}
+footer ul:after{
+    content: ''; clear: both; display: block; visibility: hidden;
+}
+footer ul li{
+    float: left;
+    margin-bottom: 2.6042vw;
+}
+footer ul li h4{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+footer ul li a{
+    font-weight: 100;
+    text-decoration: none;
+    color: #111111;
+}
+footer ul li:last-of-type a{
+    float: left;
+    text-indent: -9999px;
+}
+footer ul li:last-of-type:after{
+    content: ''; clear: both; display: block; visibility: hidden;
+}
+footer ul li:first-of-type a,
+footer ul li:nth-of-type(2) a,
+footer ul li:nth-of-type(3) a{
+    display: block;
+}
+footer ul li:last-of-type a:not(:last-of-type){
+    margin-right: 1.3158vw;
+}
+footer ul li:last-of-type a:first-of-type{
+    background: url('../images/sns_facebook.png') center center no-repeat;
+    background-size: contain;
+}
+footer ul li:last-of-type a:nth-of-type(2){
+    background: url('../images/sns_instagram.png') center center no-repeat;
+    background-size: contain;
+}
+footer ul li:last-of-type a:nth-of-type(3){
+    background: url('../images/sns_twitter.png') center center no-repeat;
+    background-size: contain;
+}
+footer ul li:last-of-type a:last-of-type{
+    background: url('../images/sns_youtube.png') center center no-repeat;
+    background-size: contain;
+}
+footer p{
+    font-weight: 100;
+    text-decoration: none;
+    color: #111111;
+    margin-left: 5%;
+}
+
+/* footer Fin */
+
+@media screen and (max-width:767px){
+    header > div{
+        margin-top: 10px;
+    }
+    header.headerChange > div{
+        margin-top: 8px;
+    }
+    header > div h1 a{
+        margin-top: 20px;
+        width: 100px;
+        height: 13px;
+    }
+    header > div input[id="menuButton"]+label{
+        width: 50px;
+        height: 50px;
+    }
+    header > div input[id="menuButton"]+label span{
+        font-size: 12px;
+    }
+    header > div input[id="menuButton"]+label span:first-of-type{
+        margin-left: 13%;
+    }
+    
+    /* header Fin */
+    
+    footer ul{
+        margin-bottom: 10px;
+    }
+    footer ul li{
+        width: 49%;
+    }
+    footer ul li:first-of-type,
+    footer ul li:nth-of-type(3){
+        margin-right: 2%;
+    }
+    footer ul li h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    footer ul li a{
+        font-size: 16px;
+    }
+    footer ul li a:first-of-type{
+        margin-bottom: 8px;
+    }
+    footer ul li:last-of-type a{
+        height: 20px;
+    }
+    footer ul li:last-of-type a:first-of-type{
+        width: 15px;
+    }
+    footer ul li:last-of-type a:nth-of-type(2){
+        width: 28px;
+    }
+    footer ul li:last-of-type a:nth-of-type(3){
+        width: 34px;
+    }
+    footer ul li:last-of-type a:last-of-type{
+        width: 36px;
+    }
+    footer p{
+        width: 90%;
+        font-size: 12px;
+    }
+    
+    /* footer Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    header.headerChange > div{
+        margin-top: 8px;
+    }
+    header > div{
+        margin-top: 12px;
+    }
+    header > div h1 a{
+        margin-top: 18px;
+        width: 120px;
+        height: 16px;
+    }
+    header > div input[id="menuButton"]+label{
+        width: 50px;
+        height: 50px;
+    }
+    header > div input[id="menuButton"]+label span{
+        font-size: 12px;
+    }
+    header > div input[id="menuButton"]+label span:first-of-type{
+        margin-left: 13%;
+    }
+    
+    /* header Fin */
+    
+    footer ul{
+        margin-bottom: 20px;
+    }
+    footer ul li{
+        width: 24%;
+    }
+    footer ul li:not(:last-of-type){
+        margin-right: 1.33%
+    }
+    footer ul li h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    footer ul li a{
+        font-size: 16px;
+    }
+    footer ul li a:first-of-type{
+        margin-bottom: 8px;
+    }
+    footer ul li:last-of-type a{
+        height: 24px;
+    }
+    footer ul li:last-of-type a:first-of-type{
+        width: 11px;
+    }
+    footer ul li:last-of-type a:nth-of-type(2){
+        width: 24px;
+    }
+    footer ul li:last-of-type a:nth-of-type(3){
+        width: 30px;
+    }
+    footer ul li:last-of-type a:last-of-type{
+        width: 32px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    
+    /* footer Fin */
+}
+@media screen and (min-width:1280px){
+    header.headerChange > div{
+        margin-top: 12px;
+    }
+    header > div{
+        margin-top: 22px;
+    }
+    header > div h1 a{
+        margin-top: 20px;
+        width: 170px;
+        height: 22px;
+    }
+    header > div input[id="menuButton"]+label:hover span:first-of-type,
+    header > div input[id="menuButton"]+label:hover span:nth-of-type(3){
+        transform: translateY(-3px);
+    }
+    header > div input[id="menuButton"]+label:hover span:nth-of-type(2),
+    header > div input[id="menuButton"]+label:hover span:last-of-type{
+        transform: translateY(3px);
+    }
+    header > div input[id="menuButton"]+label{
+        width: 60px;
+        height: 60px;
+    }
+    header > div input[id="menuButton"]+label span{
+        font-size: 14px;
+    }
+    header > div input[id="menuButton"]+label span:first-of-type{
+        margin-left: 15%;
+    }
+    
+    /* header Fin */
+    
+    footer ul{
+        margin-bottom: 25px;
+    }
+    footer ul li:not(:last-of-type){
+        margin-right: 12.6316vw;
+    }
+    footer ul li h4{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    footer ul li a{
+        font-size: 20px;
+    }
+    footer ul li a:first-of-type{
+        margin-bottom: 15px;
+    }
+    footer ul li:last-of-type a{
+        height: 28px;
+    }
+
+    footer ul li:last-of-type a:first-of-type{
+        width: 15px;
+    }
+    footer ul li:last-of-type a:nth-of-type(2){
+        width: 28px;
+    }
+    footer ul li:last-of-type a:nth-of-type(3){
+        width: 34px;
+    }
+    footer ul li:last-of-type a:last-of-type{
+        width: 36px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    
+    /* footer Fin */
+}

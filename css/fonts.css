@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'NanumGothicRegular';
+  src: url('../fonts/Nanum_Gothic/NanumGothicRegular.eot');
+  src: url('../fonts/Nanum_Gothic/NanumGothicRegular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Nanum_Gothic/NanumGothic.svg#NanumGothic') format('svg'),
+       url("../fonts/Nanum_Gothic/NanumGothicRegular.ttf") format("truetype"),
+       url('../fonts/Nanum_Gothic/NanumGothic.woff') format('woff'),
+       url('../fonts/Nanum_Gothic/NanumGothicRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vogue';
+  src: url('../fonts/vogue/Vogue.eot');
+  src: url('../fonts/vogue/Vogue.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/vogue/Vogue.svg#Vogue') format('svg'),
+       url("../fonts/vogue/Vogue.ttf") format("truetype"),
+       url('../fonts/vogue/Vogue.woff') format('woff'),
+       url('../fonts/vogue/Vogue.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

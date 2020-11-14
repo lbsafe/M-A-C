@@ -1,0 +1,2199 @@
+body{
+    height: 100%;
+}
+.lipArea h2,
+.faceArea h2{
+    background-color: #f9f9f9;
+    color: #111111;
+    text-align: center;
+    line-height: 0px;
+    width: 100%;
+}
+.lipArea h2 span,
+.faceArea h2 span,
+.eyesArea > div h2 span{
+    display: block;
+    text-indent: -9999px;
+    height: 1px;
+    background-color: #111111;
+}
+
+/* subglobal Fin */
+
+.menuArea{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111111;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.3s;
+    z-index: 999;
+}
+.menuArea.visible{
+    opacity: 1;
+    visibility: visible;
+}
+.menuArea nav.menuPage{
+    width: inherit;
+    height: inherit;
+    background: url('../images/menu_01.jpg');
+    background-size: cover;
+    background-position: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+.menuArea nav.menuPage ul{
+    position: absolute;
+    transform: translateX(50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+.menuArea nav.menuPage ul li{
+    margin-bottom: 5.2vw;
+}
+.menuArea nav.menuPage ul li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* menuArea Fin */
+
+.mainArea{
+    background: url("../images/main_bg.png") top center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.mainArea > div img{
+    display: block;
+    width: 42.1%;
+    margin: 0 auto;
+}
+.mainArea > div:after{
+    display: block; clear: both; visibility: hidden; content: '';
+}
+.mainArea > div h2,
+.mainArea > div strong{
+    color: #111111;
+}
+.mainArea > div h2{
+    float: left;
+    text-align: left;
+}
+.mainArea > div strong{
+    float: right;
+    text-align: right;
+}
+
+/* mainArea Fin */
+
+.lipArea{
+    background: url("../images/lips_bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+.lipArea > img{
+    width: 100%;
+}
+.lipArea > div ul{
+    overflow: hidden;
+}
+.lipArea > div ul li h3{
+    color: #111111;
+}
+.lipArea > div ul li figure figcaption dl dt{
+    box-sizing: border-box;
+    font-weight: 600;
+    color: #111111;
+    border-bottom: 1px solid #111111;
+}
+.lipArea > div ul li figure figcaption dl dd{
+    font-weight: 100;
+    color: #111111;
+}
+.lipArea > div ul li:nth-of-type(2) figure:after{
+    content: ''; clear: both; display: block; visibility: hidden;
+}
+.lipArea > div ul li:last-of-type figure:after{
+    content: ''; clear: both; display: block; visibility: hidden;
+}
+.lipArea > div ul li:last-of-type{
+    padding-bottom: 100px;
+}
+
+/* lipArea Fin */
+
+.faceArea{
+    position: relative;
+}
+.faceArea h2{
+    position: absolute;
+}
+.faceArea ul li:first-of-type{
+    background: url("../images/face_01.jpg") center center no-repeat;
+    background-size: cover;
+}
+.faceArea ul li:nth-of-type(2){
+    background: url("../images/face_02.jpg") center center no-repeat;
+    background-size: cover;
+}
+.faceArea ul li:last-of-type{
+    background: url("../images/face_03.jpg") center center no-repeat;
+    background-size: cover;
+}
+.faceArea ul li div h3{
+    color: #fff;
+    text-align: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+}
+.faceArea ul li div p{
+    display: block;
+    margin: 0 auto;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+.faceArea ul li div a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+.faceArea ul li div img{
+    display: block;
+    margin: 0 auto;
+}
+.faceArea ul li:first-of-type div,
+.faceArea ul li:nth-of-type(2) div,
+.faceArea ul li:last-of-type div{
+    position: relative;
+    width: 100%;
+}
+.faceArea ul li:first-of-type div img,
+.faceArea ul li:nth-of-type(2) div img,
+.faceArea ul li:last-of-type div img,
+.faceArea ul li div a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* faceArea Fin */
+
+.eyesArea{
+    overflow: hidden;
+}
+.eyesArea > div h2{
+    margin: 0 auto;
+    color: #111111;
+    text-align: center;
+    line-height: 0px;
+    margin-bottom: 50px;
+    background: url("../images/eyes_title.png") center center no-repeat;
+}
+.eyesArea > div div:first-of-type a{
+    background: url("../images/eyes_left.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+.eyesArea > div div:first-of-type a span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 100;
+    color: #111111;
+    background-color: #fff;
+}
+.eyesArea > div div:last-of-type button.alignMix{
+    text-indent: -9999px;
+    background: url("../images/button_plus.png") center center no-repeat;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.35s;
+}
+.eyesArea > div div:last-of-type button.alignMix.active{
+    background: url("../images/button_minus.png") center center no-repeat;
+}
+.eyesArea > div div:last-of-type ul li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.eyesArea > div div:last-of-type ul li:first-of-type{
+    background: url("../images/eyes_right_01.jpg") center center no-repeat;
+    background-size: cover;
+}
+.eyesArea > div div:last-of-type ul li:nth-of-type(2){
+    background: url("../images/eyes_right_02.jpg") center center no-repeat;
+    background-size: cover;
+}
+.eyesArea > div div:last-of-type ul li:nth-of-type(3){
+    background: url("../images/eyes_right_03.jpg") center center no-repeat;
+    background-size: cover;
+}
+.eyesArea > div div:last-of-type ul li:last-of-type{
+    background: url("../images/eyes_right_04.jpg") center center no-repeat;
+    background-size: cover;
+}
+.eyesArea > div div:last-of-type ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.eyesArea > div div:last-of-type ul li a span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 100;
+    color: #111111;
+    background-color: #fff;
+}
+
+/* eyesArea Fin */
+
+div.box{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+div.box h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    color: #111111;
+    text-align: center;
+    line-height: 0px;
+}
+div.box h2 span{
+    display: block;
+    text-indent: -9999px;
+    height: 1px;
+    background-color: #111111;
+}
+div.box img{
+    position: absolute;
+    opacity: 0.5;
+    transform: translate(0, 0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+ul.tabMenu{
+    box-sizing: border-box;
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #111111;
+    display: flex;
+    padding: 10px 0;
+}
+ul.tabMenu li{
+    width: 33.33%;
+    text-align: center;
+    flex-flow: row nowrap;
+    list-style: none;
+    text-align: center;
+    color: #111111;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+ul.tabMenu li:not(:last-of-type){
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+ul.tabMenu li h3{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    opacity: 0.5;
+}
+ul.tabMenu li.activated h3{
+    opacity: 1;
+}
+div.tabPage{
+    margin: 0 auto;
+    display: none;
+    margin-bottom: 10%;
+}
+div.tabPage.activated{
+    display: block;
+}
+div.tabPage figure a{
+    display: block;
+}
+div.tabPage figure a img{
+    width: 100%;
+    border: 1px solid #111111;
+}
+div.tabPage figure figcaption,
+div.tabPage figure figcaption dl{
+    color: #111111;
+}
+div.tabPage figure figcaption dl dt{
+    box-sizing: border-box;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #111111;
+}
+div.tabPage figure figcaption dl dd:first-of-type{
+    font-weight: 100;
+    box-sizing: border-box;
+    border-bottom: 1px solid #111111;
+}
+div.tabPage figure figcaption dl dd:nth-of-type(2){
+    margin-left: 20px;
+    font-weight: 600;
+}
+div.tabPage figure figcaption dl dd:nth-of-type(3),
+div.tabPage figure figcaption dl dd:nth-of-type(4),
+div.tabPage figure figcaption dl dd:nth-of-type(5),
+div.tabPage figure figcaption dl dd:last-of-type{
+    font-weight: 100;
+    display: list-item;
+    list-style: disc;
+    margin: 0 0 5px 21px;
+}
+
+/* listArea subglobal Fin */
+
+.lipListArea{
+    overflow: hidden;
+}
+.lipListArea > div.box{
+    background: #ff6b6d;
+}
+.lipListArea > div.box img:first-of-type{
+    width: 10%;
+    bottom: 0;
+    left: 10%;
+}
+.lipListArea > div.box img:nth-of-type(2){
+    width: 20%;
+    top: 0;
+    left: 15%;
+}
+.lipListArea > div.box img:nth-of-type(3){
+    width: 30%;
+    top: 17%;
+    left: 22%;
+}
+.lipListArea > div.box img:nth-of-type(4){
+    width: 11%;
+    bottom: 7%;
+    right: 25%;
+}
+.lipListArea > div.box img:nth-of-type(5){
+    width: 8.5%;
+    bottom: 0;
+    right: 11%;
+}
+.lipListArea > div.box img:last-of-type{
+    width: 23%;
+    top: 20%;
+    right: 8%;
+}
+
+/* lipListArea Fin */
+
+.faceListArea{
+    overflow: hidden;
+}
+.faceListArea > div.box{
+    background: #e9dabd;
+}
+.faceListArea > div.box img:first-of-type{
+    width: 10%;
+    top: 25%;
+    left: 25%;
+}
+.faceListArea > div.box img:nth-of-type(2){
+    width: 10%;
+    top: 0;
+    left: 10%;
+}
+.faceListArea > div.box img:nth-of-type(3){
+    width: 40%;
+    top: 10%;
+    right: 13%;
+}
+.faceListArea > div.box img:nth-of-type(4){
+    width: 12%;
+    bottom: 0;
+    left: 40%;
+}
+.faceListArea > div.box img:nth-of-type(5){
+    width: 10%;
+    bottom: 10%;
+    right: 10%;
+}
+.faceListArea > div.box img:last-of-type{
+    width: 20%;
+    bottom: 0;
+    left: 13%;
+}
+
+/* faceListArea Fin */
+
+.eyesListArea{
+    overflow: hidden;
+}
+.eyesListArea > div.box{
+    background: #ff7d72;
+}
+.eyesListArea > div.box img:first-of-type{
+    width: 17%;
+    top: 5%;
+    right: 10%;
+}
+.eyesListArea > div.box img:nth-of-type(2){
+    width: 13%;
+    bottom: 10%;
+    left: 7%;
+}
+.eyesListArea > div.box img:nth-of-type(3){
+    width: 10%;
+    bottom: 0;
+    right: 7%;
+}
+.eyesListArea > div.box img:nth-of-type(4){
+    width: 22%;
+    bottom: 5%;
+    right: 15%;
+}
+.eyesListArea > div.box img:nth-of-type(5){
+    width: 10%;
+    bottom: 0;
+    left: 35%;
+}
+.eyesListArea > div.box img:last-of-type{
+    width: 43%;
+    top: 0%;
+    left: 10%;
+}
+
+/* eyesListArea Fin */
+
+.detailArea{
+    overflow: hidden;
+}
+.detailArea > div{
+    height: 100vh;
+    position: relative;
+}
+.detailArea > div div.swiper-containe{
+    overflow: hidden;
+}
+.detailArea > div div.swiper-container ul.swiper-wrapper li.swiper-slide{
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: -9999px;
+    transition-timing-function: ease-in-out;
+}
+.lipA{
+    background: url("../images/lipList_item_01.jpg") center center no-repeat;
+    background-size: cover;
+}
+.lipB{
+    background: url("../images/lipList_item_012.jpg") center center no-repeat;
+    background-size: cover;
+}
+.lipC{
+    background: url("../images/lipList_item_013.jpg") center center no-repeat;
+    background-size: cover;
+}
+.lipD{
+    background: url('../images/lipList_item_02.jpg') center center no-repeat;
+    background-size: cover;
+}
+.lipE{
+    background: url('../images/lipList_item_022.jpg') center center no-repeat;
+    background-size: cover;
+}
+.lipF{
+    background: url('../images/lipList_item_023.jpg') center center no-repeat;
+    background-size: cover;
+}
+.lipG{
+    background: url('../images/lipList_item_03.jpg') center center no-repeat;
+    background-size: cover;
+}
+.lipH{
+    background: url('../images/lipList_item_032.jpg') center center no-repeat;
+    background-size: cover;
+}
+.lipI{
+    background: url('../images/lipList_item_033.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceA{
+    background: url('../images/faceList_item_01.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceB{
+    background: url('../images/faceList_item_012.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceC{
+    background: url('../images/faceList_item_013.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceD{
+    background: url('../images/faceList_item_02.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceE{
+    background: url('../images/faceList_item_022.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceF{
+    background: url('../images/faceList_item_023.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceG{
+    background: url('../images/faceList_item_03.jpg') center center no-repeat;
+    background-size: cover;
+}
+.faceH{
+    background: url('../images/faceList_item_032.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesA{
+    background: url('../images/eyesList_item_011.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesB{
+    background: url('../images/eyesList_item_012.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesC{
+    background: url('../images/eyesList_item_013.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesD{
+    background: url('../images/eyesList_item_021.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesE{
+    background: url('../images/eyesList_item_022.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesF{
+    background: url('../images/eyesList_item_023.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesG{
+    background: url('../images/eyesList_item_031.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesH{
+    background: url('../images/eyesList_item_032.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesI{
+    background: url('../images/eyesList_item_033.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesJ{
+    background: url('../images/eyesList_item_041.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesK{
+    background: url('../images/eyesList_item_042.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesL{
+    background: url('../images/eyesList_item_043.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesM{
+    background: url('../images/eyesList_item_051.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesN{
+    background: url('../images/eyesList_item_052.jpg') center center no-repeat;
+    background-size: cover;
+}
+.eyesO{
+    background: url('../images/eyesList_item_053.jpg') center center no-repeat;
+    background-size: cover;
+}
+.detailArea > div div.rightArea h3{
+    color: #111111;
+    border-bottom: 1px solid #111111;
+}
+.detailArea > div div.rightArea p{
+    color: #111111;
+    font-weight: 100;
+}
+.detailArea > div div.rightArea p:first-of-type,
+.detailArea > div div.rightArea p:nth-of-type(2),
+.detailArea > div div.rightArea p:last-of-type{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.detailArea > div div.rightArea p span.red{
+    color: #b50327;
+}
+.detailArea > div div.rightArea p span.pink{
+    color: #fdc7c7;
+}
+.detailArea > div div.rightArea p span.pinks{
+    color: #f5b1ef;
+}
+.detailArea > div div.rightArea p span.nc{
+    color: #e0a37a;
+}
+.detailArea > div div.rightArea p span.beaming{
+    color: #ffcbba;
+}
+.detailArea > div div.rightArea p span.brass{
+    color: #969e5c;
+}
+.detailArea > div div.rightArea p span.copper{
+    color: #b24a2f;
+}
+.detailArea > div div.rightArea p span.gold{
+    color: #dea98c;
+}
+.detailArea > div div.rightArea p span.green{
+    color: #786834;
+}
+.detailArea > div div.rightArea p span.brown{
+    color: #8e3f44;
+}
+.detailArea > div div.rightArea p span.rosy{
+    color: #b73b6f;
+}
+.detailArea > div div.rightArea form select{
+    box-sizing: border-box;
+    padding: 5px 0 5px 10px;
+    width: 100%;
+    color: #111111;
+    font-weight: 100;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.detailArea > div div.rightArea form input{
+    width: 49%;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 1px solid #111111;
+    float: left;
+    cursor: pointer;
+}
+.detailArea > div div.rightArea form input:first-of-type{
+    margin-right: 2%;
+    background-color: #111111;
+    color: #fff;
+}
+.detailArea > div div.rightArea form input:last-of-type{
+    background-color: #fff;
+    color: #111111;
+}
+.detailArea > div > a{
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #111111;
+    color: #fff;
+    font-weight: 100;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    right: 5%;
+}
+
+/* detailArea Fin */
+
+.storyArea,
+.backToArea,
+.contactArea,
+.privacyArea,
+.termsArea{
+    overflow: hidden;
+    position: relative;
+    color: #111111;
+}
+.storyArea div,
+.backToArea div,
+.contactArea > div,
+.privacyArea div,
+.termsArea div{
+    box-sizing: border-box;
+}
+.storyArea div h2,
+.backToArea div h2,
+.contactArea > div h2,
+.privacyArea div h2,
+.termsArea div h2{
+    text-align: center;
+    border-bottom: 1px solid #111111;
+}
+.contactArea > div div dl dt{
+    text-align: center;
+    font-weight: 600;
+    display: block;
+}
+.storyArea div p,
+.backToArea div p,
+.privacyArea div p,
+.termsArea div p,
+.contactArea > div div dl dd{
+    font-size: 16px;
+}
+.contactArea > div div dl{
+    box-sizing: border-box;
+    float: left;
+    border-top: 1px solid #111111;
+}
+.privacyArea div ul li{
+    display: list-item;
+    list-style: disc;
+    margin-left: 18px;
+}
+
+/* customer service Area Fin */
+
+@media screen and (max-width:767px){
+    .lipArea h2,
+    .faceArea h2{
+        font-size: 30px;
+        padding: 20px 0 5px;
+    }
+    .lipArea h2 span,
+    .faceArea h2 span,
+    .eyesArea > div h2 span{
+        margin: 9px auto 0;
+    }
+
+    /* subglobal Fin */
+
+    .menuArea nav.menuPage ul{
+        top: 50%;
+        left: 42.5%;
+    }
+    .menuArea nav.menuPage ul li a{
+        font-size: 30px;
+    }
+    
+    /* menuArea Fin */
+    
+    .mainArea{
+        height: 100vh;
+        padding-top: 25vh;
+    }
+    .mainArea > div img{
+        margin-bottom: 25px;
+    }
+    .mainArea > div:after{
+        display: block; clear: both; visibility: hidden; content: '';
+    }
+    .mainArea > div h2,
+    .mainArea > div strong{
+        font-size: 30px;
+    }
+    .mainArea > div h2{
+        margin-bottom: 15px;
+    }
+
+    /* mainArea Fin */
+    
+    .lipArea > img{
+        margin-bottom: 30px;
+    }
+    .lipArea h2{
+        margin-bottom: 100px;
+    }
+    .lipArea h2 span{
+        width: 58px;
+    }
+    .lipArea > div ul li:not(:last-of-type){
+        margin-bottom: 90px;
+    }
+    .lipArea > div ul li h3{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .lipArea > div ul li figure figcaption dl dt{
+        font-size: 16px;
+        padding-bottom: 8px;
+        margin-bottom: 7px;
+    }
+    .lipArea > div ul li figure figcaption dl dd{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .lipArea > div ul li figure:after{
+        content: ''; clear: both; display: block; visibility: hidden;
+    }
+    .lipArea > div ul li figure figcaption{
+        float: left;
+        width: 50%;
+    }
+    .lipArea > div ul li figure a{
+        width: 50%;
+    }
+    .lipArea > div ul li:not(:nth-of-type(2)) figure a{
+        float: left;
+    }
+    .lipArea > div ul li figure a img{
+        display: block;
+        margin: 0 auto;
+    }
+    .lipArea > div ul li:not(:last-of-type) figure a img{
+        width: 50%;
+    }
+    .lipArea > div ul li:not(:last-of-type) figure figcaption dl{
+        margin-top: 9.2632vh;
+    }
+    .lipArea > div ul li:first-of-type figure figcaption dl dt{
+        width: 91px;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure a{
+        float: right;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption:after{
+        content: ''; clear: both; display: block; visibility: hidden;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl{
+        float: right;
+        text-align: right;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dt{
+        display: inline-block;
+        width: 58px;
+    }
+    .lipArea > div ul li:last-of-type figure a img{
+        width: 80%;
+        transform: translateY(25%);
+    }
+    .lipArea > div ul li:last-of-type figure figcaption dl{
+        margin-top: 30px;
+    }
+    .lipArea > div ul li:last-of-type figure figcaption dl dt{
+        width: 54px;
+    }
+    
+    /* lipArea Fin */
+    
+    .faceArea h2{
+        top: 30px;
+    }
+    .faceArea h2 span{
+        width: 68px;
+    }
+    .faceArea ul{
+        display: block;
+    }
+    .faceArea ul li{
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 500px;
+        padding-top: 100px;
+        width: 100%;
+    }
+    .faceArea ul li div h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .faceArea ul li div p{
+        width: 90%;
+        font-size: 16px;
+    }
+    .faceArea ul li div a{
+        overflow: hidden;
+        font-size: 20px;
+        width: 160px;
+        line-height: 46px;
+        height: 40px;
+        border-radius: 5px;
+        bottom: 20%;
+    }
+    .faceArea ul li:first-of-type div,
+    .faceArea ul li:nth-of-type(2) div,
+    .faceArea ul li:last-of-type div{
+        height: 400px;
+    }
+    .faceArea ul li:first-of-type div img{
+        top: 30%;
+        width: 12.23%;
+    }
+    .faceArea ul li:nth-of-type(2) div img{
+        top: 28%;
+        width: 34%;
+    }
+    .faceArea ul li:last-of-type div img{
+        top: 34%;
+        width: 12%;
+    }
+    
+    /* faceArea Fin */
+    
+    .eyesArea{
+        padding: 80px 0;
+        background: url("../images/eyes_bg02.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .eyesArea > div h2{
+        padding-top: 30px;
+        font-size: 30px;
+        width: 200px;
+        height: 20px;
+        background-size: contain;
+    }
+    .eyesArea > div h2 span{
+        width: 65px;
+    }
+    .eyesArea > div div{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .eyesArea > div div:first-of-type{
+        margin-bottom: 30px;
+    }
+    .eyesArea > div div:first-of-type a{
+        width: 100%;
+        height: 67.5vw;
+    }
+    .eyesArea > div div:first-of-type a span{
+        padding: 5px 0 0 6px;
+        font-size: 16px;
+        border-radius: 7px 0 0 0;
+    }
+    .eyesArea > div div:last-of-type button.alignMix{
+        display: none;
+    }
+    .eyesArea > div div:last-of-type{
+        width: 80%;
+    }
+    .eyesArea > div div:last-of-type ul:after{
+        content: ''; clear: both; visibility: hidden; display: block;
+    }
+    .eyesArea > div div:last-of-type ul li{
+        float: left;
+        width: 49%;
+        height: 33.059vw;
+    }
+    .eyesArea > div div:last-of-type ul li:first-of-type,
+    .eyesArea > div div:last-of-type ul li:nth-of-type(3){
+        margin-right: 2%;
+    }
+    .eyesArea > div div:last-of-type ul li:first-of-type,
+    .eyesArea > div div:last-of-type ul li:nth-of-type(2){
+        margin-bottom: 2%;
+    }
+    .eyesArea > div div:last-of-type ul li a span{
+        padding: 3px 0 0 4px;
+        font-size: 16px;
+        border-radius: 7px 0 0 0;
+    }
+    
+    /* eyesArea Fin */
+    
+    div.box{
+        margin-bottom: 5%;
+    }
+    div.box h2{
+        font-size: 60px;
+    }
+    div.box h2 span{
+        margin: 18px auto 0;
+    }
+    ul.tabMenu{
+        margin: 0 auto 10px;
+        width: 90%;
+    }
+    ul.tabMenu li h3{
+        padding-top: 2px;
+        font-size: 4.9vw;
+    }
+    div.tabPage{
+        width: 90%;
+    }
+    div.tabPage figure a{
+        margin: 5% auto 0;
+        width: 40%;
+    }
+    div.tabPage figure figcaption{
+        margin-top: 2%;
+        width: 100%;
+    }
+    div.tabPage figure figcaption dl dt{
+        font-size: 16px;
+        margin-bottom: 8px;
+        padding-bottom: 7px;
+    }
+    div.tabPage figure figcaption dl dd{
+        font-size: 16px;
+    }
+    div.tabPage figure figcaption dl dd:first-of-type{
+        padding-bottom: 7px;
+        line-height: 22px;
+        margin-bottom: 9px;
+    }
+    div.tabPage figure figcaption dl dd:nth-of-type(2){
+        margin-bottom: 6px;
+    }
+
+    /* listArea subglobal Fin */
+    
+    .lipListArea{
+        background: url('../images/lipList_bg_02.jpg') 95% bottom no-repeat,
+        url('../images/lipList_bg_01.jpg') left 60% no-repeat;
+        background-size: 30%;
+    }
+    .lipListArea > div.box h2 span{
+        width: 113px;
+    }
+
+    /* lipListArea Fin */
+    
+    .faceListArea{
+        background: url('../images/faceList_bg_02.jpg') 95% 98% no-repeat,
+        url('../images/faceList_bg_012.jpg') left 60% no-repeat;
+        background-size: 31%;
+    }
+    .faceListArea > div.box h2 span{
+        width: 133px;
+    }
+    
+    /* faceListArea Fin */
+    
+    .eyesListArea{
+        background: url('../images/eyesList_bg_02.jpg') 90% 96% no-repeat,
+        url('../images/eyesList_bg_03.jpg') left 63% no-repeat,
+        url('../images/eyesList_bg_01.jpg') right 58% no-repeat;
+        background-size: 27%;
+    }
+    .eyesListArea > div.box h2 span{
+        width: 127px;
+    }
+    
+    /* eyesListArea Fin */
+
+    .detailArea{
+        background: url('../images/detail_bg_02.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .detailArea > div div.swiper-container{
+        margin: 30% auto 5%;
+        width: 300px;
+        height: 300px;
+    }
+    .detailArea > div div.rightArea{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .detailArea > div div.rightArea h3{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .detailArea > div div.rightArea p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .detailArea > div div.rightArea p:first-of-type,
+    .detailArea > div div.rightArea p:nth-of-type(2),
+    .detailArea > div div.rightArea p:last-of-type{
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    .detailArea > div div.rightArea form select{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .detailArea > div div.rightArea form input{
+        font-size: 16px;
+        padding: 12px 16px;
+        margin-bottom: 10%;
+    }
+    .detailArea > div > a{
+        font-size: 12px;
+        padding: 19px 0 0 0;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 50px;
+        letter-spacing: 0.5px;
+    }
+    
+    /* detailArea Fin */
+    
+    .storyArea,
+    .backToArea,
+    .contactArea,
+    .privacyArea,
+    .termsArea{
+        background: url("../images/detail_bg_02.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .storyArea div,
+    .backToArea div,
+    .contactArea > div,
+    .privacyArea div,
+    .termsArea div{
+        padding-top: 22%;
+        margin-bottom: 15%;
+    }
+    .storyArea div h2,
+    .backToArea div h2,
+    .contactArea > div h2,
+    .privacyArea div h2,
+    .termsArea div h2{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .storyArea div h3,
+    .backToArea div h3,
+    .privacyArea div h3,
+    .termsArea div h3{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .contactArea > div div dl dt{
+        font-size: 16px;
+        margin: 0 auto 8px;
+    }
+    .storyArea div p,
+    .backToArea div p,
+    .privacyArea div p,
+    .termsArea div p{
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+    .contactArea > div div dl dd{
+        line-height: 17px;
+    }
+    .contactArea > div div dl{
+        padding: 10px 0;
+        width: 49%;
+        margin-bottom: 3%;
+    }
+    .contactArea > div div dl:first-of-type,
+    .contactArea > div div dl:nth-of-type(3),
+    .contactArea > div div dl:nth-of-type(5){
+        margin-right: 2%;
+    }
+
+    /* customer service Area Fin */
+}
+@media screen and (max-width:767px) and (orientation:landscape){
+    .mainArea{
+        height: 100%;
+        padding: 38vh 0;
+    }
+    .mainArea > div h2,
+    .mainArea > div strong{
+        width: 83%;
+    }
+
+    /* mainArea Fin */
+
+    .lipArea > div ul li:not(:last-of-type) figure a img{
+        width: 25%;
+    }
+    .lipArea > div ul li:last-of-type figure a img{
+        width: 42%;
+    }
+
+    /* lipArea Fin */
+
+    .faceArea ul li:first-of-type div img{
+        top: 30%;
+        width: 8%;
+    }
+    .faceArea ul li:nth-of-type(2) div img{
+        top: 28%;
+        width: 20%;
+    }
+    .faceArea ul li:last-of-type div img{
+        top: 34%;
+        width: 8%;
+    }
+    
+    /* faceArea Fin */
+
+    .detailArea > div div.swiper-container{
+        margin: 12% auto 5%;
+    }
+
+    /* detailArea Fin */
+
+    .contactArea > div div dl:first-of-type dt,
+    .contactArea > div div dl:last-of-type dt{
+        background: url('../images/chat.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:first-of-type dt{
+        width: 150px
+    }
+    .contactArea > div div dl:last-of-type dt{
+        width: 220px;
+    }
+    .contactArea > div div dl:nth-of-type(2) dt{
+        width: 140px;
+        background: url('../images/talk.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:nth-of-type(3) dt{
+        width: 105px;
+        background: url('../images/call.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:nth-of-type(4) dt,
+    .contactArea > div div dl:nth-of-type(5) dt{
+        background: url('../images/mail.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:nth-of-type(4) dt{
+        width: 165px;
+    }
+    .contactArea > div div dl:nth-of-type(5) dt{
+        width: 180px;
+    }
+
+    /* contactArea Fin */
+}
+@media screen and (min-width:768px){
+    .menuArea nav.menuPage ul{
+        top: 55%;
+        left: 45%;
+    }
+
+    /* menuArea Fin */
+
+    .mainArea > div img{
+        margin-bottom: 45px;
+    }
+    .mainArea > div:after{
+        display: block; clear: both; visibility: hidden; content: '';
+    }
+    .mainArea > div h2,
+    .mainArea > div strong{
+        width: 80%;
+        font-size: 4.2105vw;
+    }
+    .mainArea > div h2{
+        margin-bottom: 30px;
+    }
+
+    /* mainArea Fin */
+
+    .lipArea > img{
+        margin-bottom: 71px;
+    }
+    .lipArea > div ul li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    .lipArea > div ul li h3:not(:nth-of-type(2)){
+        margin-left: 15.78%;
+    }
+    .lipArea > div ul li:first-of-type figure:after{
+        content: ''; clear: both; display: block; visibility: hidden;
+    }
+    .lipArea > div ul li:first-of-type figure{
+        margin-left: 17.36%;
+    }
+    .lipArea > div ul li:first-of-type figure a img{
+        float: left;
+        width: 9.95%;
+    }
+    .lipArea > div ul li:not(:nth-of-type(2)) figure figcaption{
+        float: left;
+    }
+    .lipArea > div ul li:nth-of-type(2) h3{
+        text-align: right;
+        margin-right: 15.78%;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure{
+        margin-right: 20%;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure a img{
+        float: right;
+        width: 10.35%;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl{
+        float: right;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl:after{
+        content: ''; clear: both; display: block; visibility: hidden;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dt{
+        float: right;
+        text-align: right;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dd{
+        text-align: right;
+    }
+    .lipArea > div ul li:last-of-type figure{
+        margin-left: 14%;
+    }
+    .lipArea > div ul li:last-of-type figure a img{
+        float: left;
+    }
+
+    /* lipArea Fin */
+
+    .faceArea h2{
+        top: 72px;
+    }
+    .faceArea ul{
+        display: inline-flex;
+    }
+    .faceArea ul li{
+        height: 70vw;
+        width: 33.33%;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-property: all;
+        cursor: pointer;
+    }
+    .faceArea ul li div p,
+    .faceArea ul li div a{
+        opacity: 0;
+        visibility: hidden;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
+    }
+    .faceArea ul li.active div p,
+    .faceArea ul li.active div a{
+        opacity: 1;
+        visibility: visible;
+    }
+    .faceArea ul li div p{
+        width: 70%;
+    }
+    .faceArea ul li:first-of-type div,
+    .faceArea ul li:nth-of-type(2) div,
+    .faceArea ul li:last-of-type div{
+        height: inherit;
+    }
+    .faceArea ul li:first-of-type div img{
+        width: 22.23%;
+    }
+    .faceArea ul li:nth-of-type(2) div img{
+        width: 64%;
+    }
+    .faceArea ul li:last-of-type div img{
+        width: 16.24%;
+    }
+    
+    /* faceArea Fin */
+
+    .eyesArea > div:after{
+        content: ''; clear: both; visibility: hidden; display: block;
+    }
+    .eyesArea > div h2{
+        padding-top: 70px;
+    }
+    .eyesArea > div div{
+        width: 50%;
+        float: left;
+    }
+    .eyesArea > div div:first-of-type a{
+        width: 84.81%;
+        height: 35.4688vw;
+    }
+    .eyesArea > div div:first-of-type a span{
+        padding: 8px 0 0 9px;
+    }
+    .eyesArea > div div:last-of-type{
+        display: inline-flex;
+    }
+    .eyesArea > div div:last-of-type:after{
+        content: ''; clear: both; visibility: hidden; display: block;
+    }
+    .eyesArea > div div:last-of-type ul{
+        position: relative;
+    }
+    .eyesArea > div div:last-of-type ul li{
+        position: absolute;
+        top:0;
+        left:0;
+        transition:all 0.5s ease-in-out;
+        width: 17.1875vw;
+        height: 16.1458vw;
+    }
+    .eyesArea > div div:last-of-type ul li a span{
+        padding: 5px 1px 0 6px;
+    }
+        
+    /* eyesArea Fin */
+
+    div.box{
+        margin-bottom: 10%;
+    }
+    div.box h2{
+        font-size: 80px;
+    }
+    div.box h2 span{
+        margin: 25px auto 0;
+    }
+    ul.tabMenu{
+        margin: 0 auto 5%;
+        width: 75%;
+    }
+    div.tabPage{
+        width: 75%;
+    }
+    div.tabPage figure:after{
+        content: ''; clear: both; display: block; visibility: hidden;
+    }
+    div.tabPage figure a{
+        margin-top: 10%;
+        width: 28.026%;
+        float: left;
+    }
+    div.tabPage figure figcaption{
+        margin: 10% 0 0 10%;
+        width: 61.974%;
+        float: left;
+    }
+    div.tabPage figure figcaption dl dt{
+        margin-bottom: 14px;
+        padding-bottom: 13px;
+    }
+    div.tabPage figure figcaption dl dd:first-of-type{
+        padding-bottom: 13px;
+        margin-bottom: 14px;
+    }
+    div.tabPage figure figcaption dl dd:nth-of-type(2){
+        margin-bottom: 10px;
+    }
+    
+    /* listArea subglobal Fin */
+
+    .lipListArea{
+        background: url('../images/lipList_bg_02.jpg') 95% bottom no-repeat,
+        url('../images/lipList_bg_01.jpg') left 72% no-repeat;
+        background-size: 30%;
+    }
+    .lipListArea > div.box h2 span{
+        width: 150px;
+    }
+
+    /* lipListArea Fin */
+
+    .faceListArea{
+        background: url('../images/faceList_bg_02.jpg') 95% 98% no-repeat,
+        url('../images/faceList_bg_012.jpg') left 68% no-repeat;
+        background-size: 31%;
+    }
+    .faceListArea > div.box h2 span{
+        width: 180px;
+    }
+    
+    /* faceListArea Fin */
+
+    .eyesListArea{
+        background: url('../images/eyesList_bg_02.jpg') 90% 96% no-repeat,
+        url('../images/eyesList_bg_03.jpg') left 68% no-repeat,
+        url('../images/eyesList_bg_01.jpg') right 58% no-repeat;
+        background-size: 27%;
+    }
+    .eyesListArea > div.box h2 span{
+        width: 170px;
+    }
+    
+    /* eyesListArea Fin */
+
+    .detailArea > div:after{
+        content: ''; clear: both; display: block; visibility: hidden;
+    }
+    .detailArea > div div.swiper-container,
+    .detailArea > div div.rightArea{
+        margin-top: 50vh;
+        transform: translateY(-50%);
+        float: left;
+    }
+    .detailArea > div div.swiper-container{
+        width: 31.23vw;
+        height: 31.23vw;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /* detailArea Fin */
+
+    .storyArea div,
+    .backToArea div,
+    .contactArea > div,
+    .privacyArea div,
+    .termsArea div{
+        height: 100vh;
+    }
+    .storyArea div h3,
+    .backToArea div h3,
+    .privacyArea div h3,
+    .termsArea div h3{
+        margin-bottom: 16px;
+    }
+    .contactArea > div div dl dt{
+        margin: 0 auto 16px;
+    }
+    .contactArea > div div dl:first-of-type dt,
+    .contactArea > div div dl:last-of-type dt{
+        background: url('../images/chat.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:nth-of-type(2) dt{
+        background: url('../images/talk.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:nth-of-type(3) dt{
+        background: url('../images/call.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .contactArea > div div dl:nth-of-type(4) dt,
+    .contactArea > div div dl:nth-of-type(5) dt{
+        background: url('../images/mail.svg') right center no-repeat;
+        background-size: contain;
+    }
+    .storyArea div p,
+    .backToArea div p,
+    .privacyArea div p,
+    .termsArea div p{
+        margin-bottom: 16px;
+    }
+    .contactArea > div div dl{
+        height: 250px;
+        padding: 25px 0;
+    }
+
+    /* customer service Area Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    .lipArea h2,
+    .faceArea h2{
+        font-size: 36px;
+        padding: 35px 0 15px;
+    }
+    .lipArea h2 span,
+    .faceArea h2 span,
+    .eyesArea > div h2 span{
+        margin: 12px auto 0;
+    }
+
+    /* subglobal Fin */
+
+    .menuArea nav.menuPage ul li a{
+        font-size: 36px;
+    }
+    
+    /* menuArea Fin */
+    
+    .mainArea{
+        padding: 40% 0 35% 0;
+    }
+    
+    /* mainArea Fin */
+    
+    .lipArea h2{
+        margin-bottom: 100px;
+    }
+    .lipArea h2 span{
+        width: 70px;
+    }
+    .lipArea > div ul li h3{
+        font-size: 26px;
+        margin-bottom: 60px;
+    }
+    .lipArea > div ul li figure figcaption dl dt{
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin-bottom: 9px;
+    }
+    .lipArea > div ul li figure figcaption dl dd{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .lipArea > div ul li:first-of-type figure a img{
+        margin-left: 2%;
+    }
+    .lipArea > div ul li:not(:nth-of-type(2)) figure figcaption{
+        margin-top: 10px;
+    }
+    .lipArea > div ul li:first-of-type figure figcaption{
+        margin-left: 125px;
+    }
+    .lipArea > div ul li:first-of-type figure figcaption dl dt{
+        width: 103px;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure a img{
+        margin-right: 1.5%;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl{
+        margin: 3.5vh 125px 0 0;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dt{
+        width: 65px;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dd{
+        width: 330px;
+        margin-top: 40px;
+    }
+    .lipArea > div ul li:last-of-type figure a img{
+        width: 23%;
+        margin-left: 1%;
+    }
+    .lipArea > div ul li:last-of-type figure figcaption{
+        margin-left: 100px;
+    }
+    .lipArea > div ul li:last-of-type figure figcaption dl{
+        width: 320px;
+    }
+    .lipArea > div ul li:last-of-type figure figcaption dl dt{
+        width: 63px;
+    }
+    
+    /* lipArea Fin */
+    
+    .faceArea h2 span{
+        width: 80px;
+    }
+    .faceArea ul{
+        display: inline-flex;
+    }
+    .faceArea ul li{
+        padding: 200px 0 161px;
+    }
+    .faceArea ul li div h3{
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+    .faceArea ul li div p{
+        font-size: 16px;
+    }
+    .faceArea ul li div a{
+        font-size: 16px;
+        width: 120px;
+        line-height: 34px;
+        height: 30px;
+        border-radius: 5px;
+        bottom: 10%;
+    }
+    .faceArea ul li:first-of-type div img{
+        top: 40%;
+    }
+    .faceArea ul li:nth-of-type(2) div img{
+        top: 38%;
+    }
+    .faceArea ul li:last-of-type div img{
+        top: 48%;
+    }
+    
+    /* faceArea Fin */
+    
+    .eyesArea{
+        padding: 130px 0 197px;
+        background: url("../images/eyes_bg02.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .eyesArea > div h2{
+        font-size: 36px;
+        box-sizing: border-box;
+        width: 200px;
+        padding-top: 32px;
+        height: 60px;
+        background-size: contain;
+    }
+    .eyesArea > div h2 span{
+        width: 80px;
+    }
+    .eyesArea > div div:first-of-type a span{
+        padding: 8px 0 0 9px;
+        font-size: 18px;
+        border-radius: 10px 0 0 0;
+    }
+    .eyesArea > div div:last-of-type button.alignMix{
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0 7%;
+    }
+    .eyesArea > div div:last-of-type button.alignMix.active{
+        background-size: contain;
+    }
+    .eyesArea > div div:last-of-type ul li a span{
+        font-size: 16px;
+        border-radius: 8px 0 0 0;
+    }
+    
+    /* eyesArea Fin */
+    
+    ul.tabMenu li h3{
+        font-size: 26px;
+        padding-top: 5px;
+    }
+    div.tabPage figure a img{
+        margin: 31px 0 0 10%;
+    }
+    div.tabPage figure figcaption dl dt{
+        font-size: 18px;
+    }
+    div.tabPage figure figcaption dl dd{
+        font-size: 16px;
+    }
+    div.tabPage figure figcaption dl dd:first-of-type{
+        line-height: 20px;
+    }
+    
+    /* listArea subglobal Fin */
+    
+    .detailArea{
+        background: url('../images/detail_bg_02.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .detailArea > div{
+        box-sizing: border-box;
+    }
+    .detailArea > div div.rightArea{
+        width: 50%;
+    }
+    .detailArea > div div.rightArea h3{
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    .detailArea > div div.rightArea p{
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .detailArea > div div.rightArea p:first-of-type,
+    .detailArea > div div.rightArea p:nth-of-type(2),
+    .detailArea > div div.rightArea p:last-of-type{
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    .detailArea > div div.rightArea form select{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .detailArea > div div.rightArea form input{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .detailArea > div > a{
+        position: fixed;
+        font-size: 12px;
+        padding: 19px 0 0 0;
+        width: 50px;
+        height: 50px;
+        bottom: 50px;
+        letter-spacing: 0.5px;
+    }
+    
+    /* detailArea Fin */
+    
+    .storyArea,
+    .backToArea,
+    .contactArea,
+    .privacyArea,
+    .termsArea{
+        background: url("../images/detail_bg_02.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .storyArea div,
+    .backToArea div,
+    .contactArea > div,
+    .privacyArea div,
+    .termsArea div{
+        padding-top: 20vh;
+    }
+    .storyArea div h2,
+    .backToArea div h2,
+    .contactArea > div h2,
+    .privacyArea div h2,
+    .termsArea div h2{
+        font-size: 36px;
+        margin-bottom: 5vh;
+    }
+    .storyArea div h3,
+    .backToArea div h3,
+    .privacyArea div h3,
+    .termsArea div h3{
+        font-size: 26px;
+    }
+    .contactArea > div div dl dt{
+        font-size: 18px;
+    }
+    .contactArea > div div dl:first-of-type dt{
+        width: 160px;
+    }
+    .contactArea > div div dl:last-of-type dt{
+        width: 240px;
+    }
+    .contactArea > div div dl:nth-of-type(2) dt{
+        width: 150px;
+    }
+    .contactArea > div div dl:nth-of-type(3) dt{
+        width: 110px;
+    }
+    .contactArea > div div dl:nth-of-type(4) dt{
+        width: 175px;
+    }
+    .contactArea > div div dl:nth-of-type(5) dt{
+        width: 195px;
+    }
+    .contactArea > div div dl{
+        width: 49%;
+        margin-bottom: 3%;
+    }
+    .contactArea > div div dl:first-of-type,
+    .contactArea > div div dl:nth-of-type(3),
+    .contactArea > div div dl:nth-of-type(5){
+        margin-right: 2%;
+    }
+
+    /* customer service Area Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:landscape){
+    .detailArea > div{
+        height: 100%;
+        padding: 10% 0;
+    }
+    .detailArea > div div.swiper-container,
+    .detailArea > div div.rightArea{
+        margin-top: 30%;
+        transform: translateY(-50%);
+    }
+
+    /* detailArea Fin */
+
+    .storyArea div,
+    .backToArea div,
+    .contactArea > div,
+    .privacyArea div,
+    .termsArea div{
+        height: 100%;
+        padding: 26.85vh 0;
+    }
+
+    /* customer service Area Fin */
+}
+@media screen and (min-width:1280px){
+    .lipArea h2,
+    .faceArea h2{
+        font-size: 80px;
+        padding: 60px 0 15px;
+    }
+    .lipArea h2 span,
+    .faceArea h2 span,
+    .eyesArea > div h2 span{
+        margin: 25px auto 0;
+    }
+
+    /* subglobal Fin */
+
+    .menuArea nav.menuPage ul li a{
+        font-size: 4.2105vw;
+        line-height: 2.7vw;
+    }
+    .menuArea nav.menuPage ul li a:after{
+        content: '';
+        display: block;
+        margin-top: 3px;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    .menuArea nav.menuPage ul li:hover a:after{
+        transform: scaleX(1);
+    }
+    
+    /* menuArea Fin */
+    
+    .mainArea{
+        padding: 49.55vh 0 41.3vh 0;
+    }
+    
+    /* mainArea Fin */
+    
+    .lipArea h2{
+        margin-bottom: 137px;
+    }
+    .lipArea h2 span{
+        width: 150px;
+    }
+    .lipArea > div ul li{
+        opacity: 0;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.8s;
+    }
+    .lipArea > div ul li:first-of-type{
+        transform: translateX(-7%);
+    }
+    .lipArea > div ul li:nth-of-type(2){
+        transform: translateX(7%);
+    }
+    .lipArea > div ul li:last-of-type{
+        transform: translateX(-7%);
+    }
+    .lipArea > div ul li h3{
+        font-size: 45px;
+        margin-bottom: 90px;
+    }
+    .lipArea > div ul li figure figcaption dl dt{
+        font-size: 24px;
+        padding-bottom: 14px;
+        margin-bottom: 13px;
+    }
+    .lipArea > div ul li figure figcaption dl dd{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .lipArea > div ul li figure a img{
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.4s;
+    }
+    .lipArea > div ul li figure a:hover img{
+        transform: scale(1.05);
+    }
+    .lipArea > div ul li:not(:nth-of-type(2)) figure figcaption{
+        margin-left: 125px;
+    }
+    .lipArea > div ul li:not(:nth-of-type(2)) figure figcaption dl{
+        margin-top: 9.2632vh;
+    }
+    .lipArea > div ul li:first-of-type figure figcaption dl dt{
+        width: 139px;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl{
+        margin: 13.2604vh 125px 0 0;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dt{
+        width: 85px;
+    }
+    .lipArea > div ul li:nth-of-type(2) figure figcaption dl dd{
+        width: 350px;
+        margin-top: 52px;
+    }
+    .lipArea > div ul li:last-of-type figure a img{
+        width: 21.28%;
+    }
+    .lipArea > div ul li:last-of-type figure figcaption dl{
+        width: 450px;
+    }
+    .lipArea > div ul li:last-of-type figure figcaption dl dt{
+        width: 80px;
+    }
+    
+    /* lipArea Fin */
+    
+    .faceArea h2 span{
+        width: 180px;
+    }
+    .faceArea ul{
+        display: inline-flex;
+    }
+    .faceArea ul li{
+        padding-top: 361px;
+    }
+    .faceArea ul li div h3{
+        font-size: 45px;
+        margin-bottom: 70px;
+    }
+    .faceArea ul li div p{
+        font-size: 20px;
+    }
+    .faceArea ul li div a{
+        font-size: 26px;
+        width: 200px;
+        line-height: 56px;
+        height: 50px;
+        border-radius: 10px;
+        bottom: 34%;
+    }
+    .faceArea ul li:first-of-type div img{
+        top: 21%;
+    }
+    .faceArea ul li:nth-of-type(2) div img{
+        top: 19%;
+    }
+    .faceArea ul li:last-of-type div img{
+        top: 28%;
+    }
+    
+    /* faceArea Fin */
+    
+    .eyesArea{
+        padding: 150px 0 197px;
+        background: url("../images/eyes_01.png") top left no-repeat,
+        url("../images/eyes_03.png") top right no-repeat,
+        url("../images/eyes_02.png") bottom left no-repeat,
+        url("../images/eyes_04.png") bottom right no-repeat;
+    }
+    .eyesArea > div h2{
+        font-size: 80px;
+        width: 331px;
+        padding-top: 70px;
+        height: 56px;
+    }
+    .eyesArea > div h2 span{
+        width: 170px;
+    }
+    .eyesArea > div div:first-of-type a span{
+        padding: 8px 0 0 9px;
+        font-size: 26px;
+        border-radius: 15px 0 0 0;
+    }
+    .eyesArea > div div:last-of-type button.alignMix{
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 8.5%;
+    }
+    .eyesArea > div div:last-of-type button.alignMix.active{
+        background-size: cover;
+    }
+    .eyesArea > div div:last-of-type ul li a span{
+        font-size: 20px;
+        border-radius: 10px 0 0 0;
+    }
+    
+    /* eyesArea Fin */
+    
+    ul.tabMenu li h3{
+        font-size: 45px;
+        padding-top: 10px;
+    }
+    div.tabPage figure a img{
+        margin-left: 10%;
+    }
+    div.tabPage figure figcaption dl dt{
+        font-size: 24px;
+    }
+    div.tabPage figure figcaption dl dd{
+        font-size: 18px;
+    }
+    div.tabPage figure figcaption dl dd:first-of-type{
+        line-height: 22px;
+    }
+    
+    /* listArea subglobal Fin */
+    
+    .detailArea{
+        background: url('../images/detail_bg.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .detailArea > div{
+        padding-bottom: 10%;
+    }
+    .detailArea > div div.rightArea{
+        width: 40%;
+    }
+    .detailArea > div div.rightArea h3{
+        font-size: 45px;
+        margin-bottom: 16px;
+    }
+    .detailArea > div div.rightArea p{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .detailArea > div div.rightArea p:first-of-type,
+    .detailArea > div div.rightArea p:nth-of-type(2),
+    .detailArea > div div.rightArea p:last-of-type{
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    .detailArea > div div.rightArea form select{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .detailArea > div div.rightArea form input{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .detailArea > div > a{
+        position: absolute;
+        font-size: 16px;
+        padding: 22px 0 0 0;
+        width: 60px;
+        height: 60px;
+        bottom: 15%;
+    }
+    
+    /* detailArea Fin */
+    
+    .storyArea,
+    .backToArea,
+    .contactArea,
+    .privacyArea,
+    .termsArea{
+        background: url("../images/detail_bg_02.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .storyArea div,
+    .backToArea div,
+    .contactArea > div,
+    .privacyArea div,
+    .termsArea div{
+        padding-top: 26.85vh;
+    }
+    .storyArea div h2,
+    .backToArea div h2,
+    .contactArea > div h2,
+    .privacyArea div h2,
+    .termsArea div h2{
+        font-size: 80px;
+        margin-bottom: 100px;
+    }
+    .storyArea div h3,
+    .backToArea div h3,
+    .privacyArea div h3,
+    .termsArea div h3{
+        font-size: 45px;
+    }
+    .contactArea > div div dl dt{
+        font-size: 24px;
+    }
+    .contactArea > div div dl:first-of-type dt{
+        width: 220px;
+    }
+    .contactArea > div div dl:last-of-type dt{
+        width: 325px;
+    }
+    .contactArea > div div dl:nth-of-type(2) dt{
+        width: 205px;
+
+    }
+    .contactArea > div div dl:nth-of-type(3) dt{
+        width: 155px;
+    }
+    .contactArea > div div dl:nth-of-type(4) dt{
+        width: 240px;
+    }
+    .contactArea > div div dl:nth-of-type(5) dt{
+        width: 265px;
+    }
+    .contactArea > div div dl{
+        width: 32%;
+        margin-right: 2%;
+    }
+    .contactArea > div div dl:first-of-type,
+    .contactArea > div div dl:nth-of-type(2),
+    .contactArea > div div dl:nth-of-type(3){
+        margin-bottom: 3%;
+    }
+    .contactArea > div div dl:nth-of-type(3),
+    .contactArea > div div dl:last-of-type{
+        margin-right: 0%;
+    }
+
+    /* customer service Area Fin */
+}
