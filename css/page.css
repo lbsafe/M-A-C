@@ -897,6 +897,7 @@ div.tabPage figure figcaption dl dd:last-of-type{
         width: 68px;
     }
     .faceArea ul{
+        width: 100%;
         display: block;
     }
     .faceArea ul li{
@@ -1353,6 +1354,7 @@ div.tabPage figure figcaption dl dd:last-of-type{
         top: 72px;
     }
     .faceArea ul{
+        width: 100%;
         display: inline-flex;
     }
     .faceArea ul li{
@@ -1665,9 +1667,6 @@ div.tabPage figure figcaption dl dd:last-of-type{
     
     .faceArea h2 span{
         width: 80px;
-    }
-    .faceArea ul{
-        display: inline-flex;
     }
     .faceArea ul li{
         padding: 200px 0 161px;
@@ -1998,9 +1997,6 @@ div.tabPage figure figcaption dl dd:last-of-type{
     
     .faceArea h2 span{
         width: 180px;
-    }
-    .faceArea ul{
-        display: inline-flex;
     }
     .faceArea ul li{
         padding-top: 361px;
