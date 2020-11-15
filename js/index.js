@@ -57,21 +57,21 @@ function menuScroll2(){
 function imgChange(){	
     $("div.menuArea nav.menuPage ul li:first-of-type").mouseenter(function(){
         $('div.menuArea nav.menuPage').css({
-            "background": "url(../images/menu_01.jpg)",
+            "background": "url('../images/menu_01.jpg')",
             "background-size": "cover",
             "background-position": "center"
         });
     });
     $("div.menuArea nav.menuPage ul li:nth-of-type(2)").mouseenter(function(){
         $('div.menuArea nav.menuPage').css({
-            "background": "url(../images/menu_02.jpg)",
+            "background": "url('../images/menu_02.jpg')",
             "background-size": "cover",
             "background-position": "center"
         });
     });
     $("div.menuArea nav.menuPage ul li:last-of-type").mouseenter(function(){
         $('div.menuArea nav.menuPage').css({
-            "background": "url(../images/menu_03.jpg)",
+            "background": "url('../images/menu_03.jpg')",
             "background-size": "cover",
             "background-position": "center"
         });
