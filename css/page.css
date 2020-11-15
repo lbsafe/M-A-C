@@ -42,6 +42,7 @@ body{
     background: url('../images/menu_01.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
 }
