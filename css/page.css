@@ -39,7 +39,7 @@ body{
 .menuArea nav.menuPage{
     width: inherit;
     height: inherit;
-    background: url('../images/menu_01.jpg');
+    background-image: url('../images/menu_01.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -57,23 +57,26 @@ function menuScroll2(){
 function imgChange(){	
     $("div.menuArea nav.menuPage ul li:first-of-type").mouseenter(function(){
         $('div.menuArea nav.menuPage').css({
-            "background": "url('../images/menu_01.jpg')",
+            "background-image": "url('../images/menu_01.jpg')",
             "background-size": "cover",
-            "background-position": "center"
+            "background-position": "center",
+            "background-repeat": "no-repeat"
         });
     });
     $("div.menuArea nav.menuPage ul li:nth-of-type(2)").mouseenter(function(){
         $('div.menuArea nav.menuPage').css({
-            "background": "url('../images/menu_02.jpg')",
+            "background-image": "url('../images/menu_02.jpg')",
             "background-size": "cover",
-            "background-position": "center"
+            "background-position": "center",
+            "background-repeat": "no-repeat"
         });
     });
     $("div.menuArea nav.menuPage ul li:last-of-type").mouseenter(function(){
         $('div.menuArea nav.menuPage').css({
-            "background": "url('../images/menu_03.jpg')",
+            "background-image": "url('../images/menu_03.jpg')",
             "background-size": "cover",
-            "background-position": "center"
+            "background-position": "center",
+            "background-repeat": "no-repeat"
         });
     });
 }
