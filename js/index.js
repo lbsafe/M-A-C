@@ -146,7 +146,7 @@ function mainGif(){
 }
 function lipShow(){
 $(document).scroll(function(){
-    if($(window).width() < 1750){
+    if($(window).width() < 1700){
         $('.lipArea > div ul li').css({
             "transform": 'translateX(0px)',
             "opacity": '1'
