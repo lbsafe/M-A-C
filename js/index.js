@@ -165,7 +165,7 @@ $(document).scroll(function(){
                 "opacity": '1'
             });
         }
-        if(show > "2700"){
+        if(show > "2750"){
             $('.lipArea > div ul li:last-of-type').css({
                 "transform": 'translateX(0px)',
                 "opacity": '1'
